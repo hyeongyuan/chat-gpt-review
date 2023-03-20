@@ -1,6 +1,6 @@
 name: Issue Comment
 on:
-  issues:
+  pull_request:
     types:
       - opened
 
@@ -11,6 +11,6 @@ jobs:
       contents: read
       pull-requests: write
     steps:
-      - uses: hyeongyuan/review-gpt-action@v0.0.3
+      - uses: hyeongyuan/review-gpt-action@v0.0.4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
