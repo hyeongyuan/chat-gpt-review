@@ -1,6 +1,6 @@
 name: Issue Comment
 on:
-  issues:
+  pull_request:
     types:
       - opened
 
