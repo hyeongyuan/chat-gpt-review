@@ -8,8 +8,9 @@ jobs:
   sayHelloWorld:
     runs-on: ubuntu-latest
     permissions:
-      issues: write
+      contents: read
+      pull-requests: write
     steps:
-      - uses: hyeongyuan/review-gpt-action@v0.0.2
+      - uses: hyeongyuan/review-gpt-action@v0.0.3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
