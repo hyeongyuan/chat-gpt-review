@@ -8,6 +8,6 @@ jobs:
   sayHelloWorld:
     runs-on: ubuntu-latest
     steps:
-      - uses: hyeongyuan@review-gpt-action@main
+      - uses: hyeongyuan/review-gpt-action@v0.0.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
