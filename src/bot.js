@@ -5,6 +5,8 @@ module.exports = (app) => {
     //   { owner: 'yourname', repo: 'yourrepo', number: 123, body: 'Hello World !}
     const params = context.issue({ body: "Hello Kakao!!!" });
 
+    console.log('test log');
+
     // Post a comment on the issue
     return context.octokit.issues.createComment(params);
   });
