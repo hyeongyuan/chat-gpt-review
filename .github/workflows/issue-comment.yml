@@ -11,6 +11,6 @@ jobs:
       contents: read
       pull-requests: write
     steps:
-      - uses: hyeongyuan/review-gpt-action@v0.0.4
+      - uses: hyeongyuan/review-gpt-action@v0.0.5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
