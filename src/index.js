@@ -5,4 +5,4 @@ const bot = require('./bot');
 
 run(bot);
 
-console.log('world');
+console.log('hello world');
