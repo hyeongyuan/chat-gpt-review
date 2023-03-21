@@ -14,3 +14,4 @@ jobs:
       - uses: hyeongyuan/review-gpt-action@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
